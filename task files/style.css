@@ -1,0 +1,464 @@
+/* general */
+body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+body::-webkit-scrollbar {
+    width: 0;
+}
+.trtrigger1{
+    position: absolute;
+    top: 10px;
+}
+a{
+    text-decoration: none;
+} 
+.wrap{
+    width: 96%;
+}
+.rotated-arrow{
+    transform: rotate(-45deg);
+    color: white;
+    font-weight: lighter;
+    width:0px;
+    overflow: hidden;
+} 
+.rotated-arrow_line{
+    width: 30px;
+    height: 1px;
+    background-color: white;
+    margin-right: -7px;
+    margin-bottom: 2px;
+}
+.btn{
+    color: black;
+    text-transform: capitalize;
+    transition: all 0.3 ease-in-out;
+}
+.btn-underline , .btn-arrowline{
+    width: 0;
+    height: 1px;
+    background-color: black;
+}
+.btn-arrowline{
+    margin-right: -5px;
+    margin-top: 3px;
+}
+.mainimg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+.mainimg img{
+    height: 100vh;
+}
+main{
+    z-index: 99;
+}
+/* start hero side */
+.blueScreen{
+    background-color: #5551f7;
+    width:48%;
+    height: 100vh;
+    z-index: 9;
+    margin-bottom: 50px;
+}
+.bluelogo {
+    position: fixed;
+    width: 5%;
+    z-index: 5;
+}
+.bluelogo img{
+    max-width: 100%;
+    position: absolute;
+    top:40px;
+    left:45px;
+}
+.blueScreen-logo{
+    width:20%;
+}
+.blueScreen-logo .blueScreen-logo_img{
+    max-width: 100%;
+    opacity: 1;
+}
+.blueScreen-text h1 {
+    font-size: 7.5rem;
+    color: white;
+    line-height: 0.9;
+    text-transform: capitalize;
+}
+.blueScreen-text span{
+    display: block;
+}
+.blueScreen-underline{
+    height: 1px;
+    background-color: white;
+    width: 48%;
+}
+.logoside-text p {
+    color: white;
+    font-size: 1.2rem;
+    padding-top: 12px;
+}
+/* start top nav */
+nav ul{
+    list-style: none;
+    line-height: 0px;
+    width: 100%;
+}
+nav ul a{
+    color: #ddd;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.navside {
+    position: absolute;
+    top: 0;
+    width: 48%;
+    left: 48%;
+}
+/* end top nav */
+
+/* start side menu */
+.clickmenu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: white;
+    height: 100vh;
+    z-index: 99;
+    overflow: hidden;
+    width: 0;
+    opacity: 0;
+}
+.clickmenu ul{
+    list-style: none;
+}
+.clickmenu ul a{
+    text-decoration: none;
+    color: black;
+    font-size: 4rem;
+}
+.clickmenu ul a:hover{
+    color:#5551f7
+}
+.side-nav{
+    background-color: #d6d6d6;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 4.2%;
+    z-index: 9999;
+}
+.side-nav p{
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    transform-origin: 0 0;
+    transform: rotate(90deg);
+}
+.menu{
+    margin-left: 75%;
+    margin-top: 10px;
+}
+.side-nav_wrapper button{
+    width:100%;
+    background: none;
+    border: none;
+    height: 50px;
+}
+.menu-bars{
+    height: 1px;
+    background-color: black;
+    width: 30px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.menu-bars:nth-child(1){
+    margin-bottom: 10px;
+}
+#imgsequence{
+    width: 500px;
+}
+/* start second view */
+.secondview{
+    margin: 0;
+    color: white;
+}
+.secondview-right .paragraph{
+    font-size: 1.3rem;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.secondview-right_data h2{
+    font-size: 4.2rem;
+}
+.secondview-right_data p{
+    font-size: 1.3rem;
+}
+.secondview-right_data-row{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+.secondview-right_data-row:nth-child(1){
+    border-bottom: none;
+}
+/* end second view */
+/* start third view */
+.thirdview{
+    margin: 0;
+    color: white;
+    height: 100vh;
+}
+.thirdview-wrapper_content h2{
+    font-size: 2.2rem;
+    padding-bottom: 40px;
+}
+.thirdview-wrapper_content_item h2{
+    font-size: 4.2rem;
+    font-weight: 500;
+    padding-bottom: 0px;
+}
+.thirdview-wrapper_content_item p{
+    font-size: 1.3rem;
+}
+.thirdview-wrapper_content_item {
+    padding-top: 15px;
+}
+.thirdview-wrapper{
+    margin-top:12%;
+}
+/* end third view */
+/* start fourth view */
+.fourthview{
+    margin-bottom: 40%;
+}
+.fourthview-text h2{
+    font-size: 6rem;
+}
+.fourthview-text p{
+    width: 50%;
+    font-size: 1rem;
+}
+.thirdview-wrapper_content_item:nth-child(2){
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+/* end fourth view */
+/* start equipment section */
+.equipment{
+    background-color: white;
+}
+.equipment-wrapper_text h3{
+    line-height: 1.8;
+    color: black;
+    font-size: 2rem;
+}
+.equipment-wrapper_arrow  i{
+    font-size: 15rem;
+    color: #5551f7;
+}
+/* end equipment section */
+/* start industries */
+.industries{
+    border-top:1px solid #d6d6d6;
+    border-bottom:1px solid #d6d6d6;
+    position: relative;
+    max-height: 75vh;
+    overflow: hidden;
+}
+/* ============================== */
+.industries-bg{
+    position: absolute;
+    top: -38%;
+    left: -40%;
+    width: 134%;
+    height: 188%;
+    transition: transform .2s;
+    opacity: 0;
+    z-index: -1;
+}
+/* ============================== */
+.industries-number6{
+    border-right: 1px solid #d6d6d6;
+    padding-right: 8%;
+    padding-left: 2%;
+    z-index: 4;
+}
+.industries-number6 p{
+    font-size: 18rem;
+    color: #5551f7;
+}
+.industries-text {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+}
+.industries-text_links div{
+    display: inline-block;
+}
+
+.industries-text_links a{
+    color: black;
+    font-size: 1.6rem;
+}
+.industries-text_aboutcompany{
+    color: black;
+}
+/* end industry */
+/* start catalog */
+.catalog{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    border-bottom: 1px solid #d6d6d6;
+}
+.catalog-wrapper_content h2{
+    margin-bottom: 70px;
+    font-weight: 300;
+}
+.catalog-wrapper_title h4{
+    font-weight: 400;
+}
+/* end catalog */
+.projects{
+    border-bottom: none;
+}
+/* start products */
+.products-item:nth-child(even){
+    border-bottom: 1px solid #d6d6d6;
+}
+.products-item:nth-child(odd){
+    border-bottom: 1px solid #d6d6d6;
+    border-right: 1px solid #d6d6d6;
+}
+.products-item {
+    position: relative;
+    overflow: hidden;
+    height: 70vh;
+}
+.products-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.animate{
+    transform: scale(1.1);
+}
+.products-item_text{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    line-height: 0;
+    width:100%
+}
+.products-item h2 a{
+    text-decoration: none;
+    color: black;
+}
+/* end products */
+/* start drag section */
+.drag{
+    max-height: 370px;
+    overflow: hidden;
+}
+.drag-text{
+    border-right: 50px solid white;
+}
+.drag-text_sec p{
+    padding-bottom: 50px;
+}
+.drag-text_sec h2{
+    padding-bottom: 20px;
+}
+.beforeline{
+    height: 2px;
+    width: 50px;
+    background-color: black;
+    content:"";
+    display: block;
+    margin-top: 20px;
+}
+.drag-text_sec_arrow i{
+    font-size: 2rem;
+}
+.drag-text_sec_arrow button{
+    background: none;
+    border: none;
+}
+.drag-img_sec1{
+    border-right: 70px solid white;
+    height: 100%;
+}
+.drag-img_sec1 img {
+    width: 100%;
+    height: 100%;
+}
+.drag-img_sec2 img{
+    height: 100%;
+} 
+/* start contact us */
+#contact{
+    padding-top: 200px;
+}
+.contact-wrapper{
+    border-bottom: 1px solid black;
+}
+.contact-wrapper_content .desc{
+    font-size: 1.2;
+    padding-bottom: 40px;
+    border-bottom: 1px solid black;
+    padding-top: 200px;
+}
+.contact-wrapper_content .leaverequest{
+    padding-bottom: 120px;
+    width: 100%;
+}
+.info-nos p{
+    line-height: 0.5;
+}
+.bottom-text{
+    border-bottom: 1px solid black;
+
+}
+.contact-wrapper_title h2{
+    font-size: 12rem;
+    line-height: 0.9;
+    padding-right: 30px;
+    word-wrap: break-word;
+    padding-top: 200px;
+}
+.allcont{
+    padding-bottom: 60px;
+}
+.copyright p{
+    margin: 0;
+    font-size: 0.8rem;
+}
+/* end contact us */
+@media only screen and (max-width: 768px) { 
+    body{
+        
+    }
+    .wrap , .blueScreen{
+        width: 100%;
+    }
+    .side-nav , .blueScreen-underline ,.logoside-text ,.navside{
+        display: none;
+    }
+    .mainimg{
+    }
+    }
