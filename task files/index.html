@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!-- <script>
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").css({"background-color":"none"});
+    });
+</script> -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,15 +18,20 @@
 </head>
 <body>
     <div class="se-pre-con"></div>
+    <!-- loadin effect -->
+    <div id="overlay"></div>
     <div class="mainimg ">
         <img src="../images/0.jpg" alt="" class="imgsequence wrap">
     </div>
     <div class="trigger1"></div>
-    <main >
+    <main>
     <div class="bluelogo">
         <img src="../blue-m.png" alt="">
     </div>
+
+    
 <!-- start first section -->
+
     <div class="row flex-nowrap  wrapper">
         <div class="blueScreen p-0 ">
             <div class=".bluescreen-padding p-5 ">
@@ -88,7 +99,7 @@
     </div>
     <!-- end first section -->
     <!-- start second view -->
-    <div class="secondview wrap">
+    <div class="secondview wrap ">
         <div class="secondview-wrapper row p-5 ">
             <div class="secondview-left col-md-6 pl-3">
                 <h6>benefits</h6>
